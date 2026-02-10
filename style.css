@@ -1,0 +1,408 @@
+@font-face {
+    font-family: "Absolute Beauty Script";
+    src: url("font/absolute-beauty-script-regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* h1 100 weight et #d4a15f */
+/* Splash screen */
+
+.splash {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf9f7;
+    animation: splash-fade-out 0.6s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.splash-logo {
+    width: 300px;
+    height: auto;
+}
+
+.splash-title {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    color: #d4a15f;
+    margin-top: -32px;
+}
+
+.splash-subtitle {
+    font-size: 2.5rem;
+    color: #d4a15f;
+    margin-top: -16px;
+    width: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.splash-subtitle::before {
+    content: "";
+    height: 1px;
+    background-color: #d4a15f;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-2px);
+    width: 40px;
+}
+
+.splash-subtitle::after {
+    content: "";
+    height: 1px;
+    background-color: #d4a15f;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-2px);
+    width: 40px;
+}
+
+@keyframes splash-fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #faf9f7;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.logo-title {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    color: #d4a15f;
+    margin-top: -32px;
+}
+
+.logo-subtitle {
+    font-size: 2.5rem;
+    color: #d4a15f;
+    margin-top: -16px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: -16px;
+    position: relative;
+}
+
+.logo-subtitle::before {
+    content: "";
+    height: 1px;
+    background-color: #d4a15f;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-2px);
+    margin: 0 auto;
+    width: 40px;
+}
+.logo-subtitle::after {
+    content: "";
+    height: 1px;
+    background-color: #d4a15f;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-2px);
+    margin: 0 auto;
+    width: 40px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+article {
+    margin-bottom: 35px;
+}
+
+article h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #d4a15f;
+    text-transform: uppercase;
+}
+
+article p {
+    color: #555;
+    text-align: justify;
+}
+
+h4 {
+    font-family: "Absolute Beauty Script", cursive;
+    font-size: 1.5rem;
+    color: #d4a15f;
+}
+
+/* Section titles */
+
+.tarifs-particuliers,
+.tarifs-entreprises,
+.histoire,
+.certifications,
+.pour-qui {
+    margin-top: 60px;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #d4a15f;
+}
+
+/* Tarifs */
+
+.tarif-block {
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #6b5b4f;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.tarif-subtitle {
+    color: #888;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.tarif-block h4 {
+    font-family: "Noto Serif", serif;
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.tarif-block ul,
+.tarif-infos ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.tarif-block ul li,
+.tarif-infos ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.tarif-block ul li::before,
+.tarif-infos ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.tarif-note {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.tarif-badge {
+    font-size: 0.8rem;
+    background-color: #ffe5c3;
+    color: #6b5b4f;
+    padding: 2px 10px;
+    border-radius: 12px;
+    text-transform: none;
+}
+
+.tarifs-particuliers hr,
+.tarifs-entreprises hr {
+    border: none;
+    border-top: 1px solid #e0d8d0;
+    margin: 30px 0;
+}
+
+.tarif-infos {
+    margin-bottom: 30px;
+}
+
+.tarif-notes p {
+    color: #777;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Tarifs Entreprises */
+
+.tarifs-entreprises-intro ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.tarifs-entreprises-intro ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.tarifs-entreprises-intro ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.tarifs-devis {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d4a15f;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.tarifs-entreprises .tarif-block p {
+    color: #555;
+    text-align: justify;
+    margin-top: 8px;
+}
+
+/* Histoire */
+
+.histoire-fragment {
+    text-align: center !important;
+    font-style: italic;
+    line-height: 2 !important;
+    margin: 25px 0 !important;
+    color: #d4a15f;
+}
+
+.histoire-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.histoire-list li {
+    color: #555;
+    padding: 3px 0;
+}
+
+.histoire-list li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+/* Certifications */
+
+p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.certifications ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.certifications ul li {
+    color: #555;
+    padding: 4px 0;
+}
+
+.certifications ul li::before {
+    content: "•";
+    color: #6b5b4f;
+    margin-right: 8px;
+}
+
+.certification-note {
+    margin-top: 25px;
+    font-style: italic;
+    color: #6b5b4f;
+    text-align: center;
+}
+
+/* Pour qui */
+
+.pour-qui-block {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #e0d8d0;
+}
+
+.pour-qui-block ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.pour-qui-block ul li {
+    color: #555;
+    padding: 3px 0;
+}
+
+.pour-qui-block ul li::before {
+    content: "•";
+    color: #d4a15f;
+    margin-right: 8px;
+}
+
+.pour-qui-block p {
+    color: #555;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.pour-qui-label {
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 15px !important;
+}
+
+.pour-qui-disclaimer {
+    margin-top: 15px !important;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #999 !important;
+    line-height: 1.7 !important;
+}
