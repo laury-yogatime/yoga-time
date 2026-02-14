@@ -13,20 +13,20 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="splash" id="splash">
-            <img src="logo.png" alt="Logo" class="splash-logo" />
-            <h1 class="splash-title">yo:ga time</h1>
-            <h4 class="splash-subtitle">ma safe place</h4>
-        </div>
-
+        <img src="bg.jpg" alt="" class="bg-marble" />
         <main>
             <header>
                 <img src="logo.png" alt="Logo" class="logo" />
                 <h1 class="logo-title">yo:ga time</h1>
                 <h4 class="logo-subtitle">ma safe place</h4>
+                <p class="histoire-fragment citation-animated">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam nibh urna, pharetra a elit ac, laoreet vestibulum
+                    nunc. Morbi ornare, erat at molestie lacinia
+                </p>
             </header>
 
-            <section class="histoire">
+            <section class="histoire" id="histoire">
                 <h2>♡ L'histoire de yo:ga time</h2>
 
                 <p>
@@ -64,7 +64,7 @@
                 <p>
                     Alors il a fallu faire un choix vital :<br />Partir pour ne
                     pas agoniser. Partir pour respirer et aller à la rencontre
-                    de ce qui j'allais devenir, ou plutôt redevenir.<br />Partie
+                    de ce qui j'allais devenir, ou plutôt redevenir.<br />Partir
                     pour ne pas devenir le fantôme de moi même.<br />Pas pour
                     oublier.<br />Mais pour survivre autrement.
                 </p>
@@ -95,8 +95,8 @@
                 </p>
 
                 <p>
-                    Dans la vie d'ashram, j'ai appris la discipline, la
-                    simplicité, le silence.
+                    Durant mes 3 mois de vie dans un ashram, j'ai appris la
+                    discipline, la simplicité, le silence.
                 </p>
 
                 <p>
@@ -175,8 +175,10 @@
                     l'envie d'explorer, te révéler, prendre soin de ton corps,
                     de ton âme et de ton esprit.
                 </p>
+
+                <img src="laury.jpg" alt="Laury" class="histoire-photo" />
             </section>
-            <section class="pour-qui">
+            <section class="pour-qui" id="pour-qui">
                 <h2>𖤓 Ma Safe place, pour qui ?</h2>
 
                 <p>
@@ -299,11 +301,11 @@
                     </p>
                 </div>
             </section>
-            <section class="content">
-                <h2>ॐ Dans Ma Safe Place, tu trouveras :</h2>
+            <section class="content" id="contenu">
+                <h2>ॐ Dans Ma Safe Place, tu trouveras :</h2>
 
                 <article>
-                    <h2>🧘‍♀️ La pratique des asanas</h2>
+                    <h3>🧘‍♀️ La pratique des asanas</h3>
                     <p>
                         Des postures variées, dynamiques ou douces, pratiquées
                         avec conscience pour renforcer et assouplir le corps,
@@ -314,7 +316,7 @@
                 </article>
 
                 <article>
-                    <h2>🔔 Des bains sonores</h2>
+                    <h3>🔔 Des bains sonores</h3>
                     <p>
                         Des séances basées sur les vibrations et les sons pour
                         favoriser la détente profonde, apaiser le système
@@ -324,7 +326,7 @@
                 </article>
 
                 <article>
-                    <h2>🌬 Du breathwork</h2>
+                    <h3>🌬 Du breathwork</h3>
                     <p>
                         Des pratiques de respiration guidée pour réguler le
                         système nerveux, soutenir la santé globale, libérer les
@@ -334,7 +336,7 @@
                 </article>
 
                 <article>
-                    <h2>🧘‍♀️ De la méditation guidée</h2>
+                    <h3>🧘‍♀️ De la méditation guidée</h3>
                     <p>
                         Des temps de présence et d'attention pour calmer le
                         mental, développer la stabilité intérieure et nourrir
@@ -343,7 +345,7 @@
                 </article>
 
                 <article>
-                    <h2>📿 La philosophie du yoga</h2>
+                    <h3>📿 La philosophie du yoga</h3>
                     <p>
                         Une approche accessible des principes du yoga pour
                         relier la pratique au quotidien, soutenir la santé
@@ -352,7 +354,7 @@
                     </p>
                 </article>
             </section>
-            <section class="tarifs-particuliers">
+            <section class="tarifs-particuliers" id="tarifs-particuliers">
                 <h2>💰 Tarifs pour les particuliers</h2>
 
                 <div class="tarif-block">
@@ -609,8 +611,8 @@
                     </p>
                 </div>
             </section>
-            <section class="tarifs-entreprises">
-                <h2>💰 Tarifs Événements & Entreprises</h2>
+            <section class="tarifs-entreprises" id="tarifs-entreprises">
+                <h2>💰 Tarifs Événements & Entreprises</h2>
 
                 <div class="tarifs-entreprises-intro">
                     <ul>
@@ -697,7 +699,7 @@
                     </p>
                 </div>
             </section>
-            <section class="certifications">
+            <section class="certifications" id="certifications">
                 <h2>𓁿 Certifications & formations</h2>
 
                 <p>
@@ -728,5 +730,27 @@
                 </p>
             </section>
         </main>
+
+        <nav class="bottom-nav" id="bottom-nav">
+            <button class="bottom-nav-toggle" id="bottom-nav-toggle">
+                <span class="bottom-nav-label"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#d4a15f" d="M12.354 7.147a.5.5 0 0 0-.344-.145L12 7l-.007.001a.5.5 0 0 0-.347.146l-4.5 4.5a.5.5 0 0 0 .708.707L11.5 8.707v7.794a.5.5 0 1 0 1 0V8.706l3.646 3.647a.5.5 0 0 0 .707 0a.5.5 0 0 0 0-.707zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c5.52-.006 9.994-4.48 10-10c0-5.523-4.477-10-10-10m0 19a9 9 0 1 1 0-18a9.01 9.01 0 0 1 9 9a9 9 0 0 1-9 9"/></svg>
+            </button>
+            <ul class="bottom-nav-menu" id="bottom-nav-menu">
+                <li><a href="#histoire">L'histoire de yo:ga time</a></li>
+                <li><a href="#pour-qui">Ma Safe place, pour qui ?</a></li>
+                <li><a href="#contenu">Dans Ma Safe Place, tu trouveras</a></li>
+                <li><a href="#tarifs-particuliers">Tarifs particuliers</a></li>
+                <li><a href="#tarifs-entreprises">Tarifs entreprises</a></li>
+                <li>
+                    <a href="#certifications">Certifications & formations</a>
+                </li>
+                <li class="bottom-nav-rdv">
+                    <a href="https://calendly.com/laury-yogatime?lid=ygjvde2x51fh&utm_medium=email&utm_source=braze&utm_campaign=2024Q4-NUR-TRIAL-ONB-ALL_ROLES-EN-Pers_Core_Onboarding&utm_content=user_url_text">Prise de rendez-vous</a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="script.js"></script>
     </body>
 </html>
