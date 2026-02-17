@@ -143,13 +143,11 @@ article h2 {
 
 p {
     color: #555;
-    text-align: justify;
     margin-block-end: 15px;
 }
 
 article p {
     color: #555;
-    text-align: justify;
 }
 
 ul {
@@ -237,7 +235,6 @@ ul {
 
 .pour-qui-block p {
     color: #555;
-    text-align: justify;
     margin-block-end: 10px;
 }
 
@@ -273,6 +270,11 @@ ul {
     color: rgb(85, 85, 85);
     text-decoration: underline;
     margin-block: 30px 15px;
+}
+
+.tarif-block h4 .no-underline {
+    text-decoration: none;
+    display: inline;
 }
 
 .tarif-block ul,
@@ -363,7 +365,6 @@ ul {
 
 .tarifs-entreprises .tarif-block p {
     color: #555;
-    text-align: justify;
     margin-block-start: 8px;
 }
 
